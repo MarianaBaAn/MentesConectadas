@@ -1,0 +1,761 @@
+<!-- CONTENIDO EDITABLE: modifica aquí textos, guías y preguntas. app.js contiene la lógica. -->
+<template id="landing-content">
+  <div data-key="eyebrow">INFORMACIÓN · ORIENTACIÓN · CONVIVENCIA</div>
+  <div data-key="title">Mentes<br>Conectadas.</div>
+  <div data-key="description">Una plataforma de consulta para comprender la neurodivergencia y favorecer una convivencia universitaria más clara, respetuosa e inclusiva.</div>
+  <div data-key="intro-title">Conocer para acompañar mejor.</div>
+  <div data-key="intro-text">Mentes Conectadas reúne información y guías prácticas para que docentes, estudiantes y personal académico cuenten con recursos claros ante situaciones del entorno universitario.</div>
+</template>
+<template id="public-content">
+  <div data-key="title">Conoce la plataforma</div>
+  <div data-key="description">Encuentra información sobre neurodivergencia, situaciones frecuentes del entorno universitario y guías prácticas relacionadas con cada situación.</div>
+  <div data-key="notice">Mentes Conectadas es una herramienta educativa de consulta. No sustituye una evaluación, diagnóstico ni atención profesional.</div>
+</template>
+<template id="dashboard-content">
+  <div data-key="title">¿Qué encontrarás?</div>
+  <div data-key="description">Consulta información y guías para comprender mejor distintas situaciones que pueden presentarse en el entorno universitario.</div>
+  <div data-key="evaluation-title">Evalúa tus conocimientos</div>
+  <div data-key="evaluation-description">Responde preguntas breves relacionadas con una guía y revisa qué puntos puedes reforzar.</div>
+</template>
+<template id="about-content">
+  <div data-key="title">Sobre nosotros</div>
+  <div data-key="who">Mentes Conectadas es una plataforma educativa que reúne información clara y recursos orientativos para favorecer la comprensión de la neurodivergencia y una convivencia universitaria respetuosa e inclusiva.</div>
+  <div data-key="mission">Ofrecer información accesible y guías prácticas de carácter orientativo que ayuden a estudiantes, docentes y personal académico a comprender distintas necesidades y a promover entornos universitarios más claros, respetuosos e inclusivos.</div>
+  <div data-key="vision">Contribuir a una comunidad universitaria donde las diferencias en la forma de aprender, comunicarse y participar sean comprendidas y respetadas, y donde las personas encuentren condiciones más accesibles para su desarrollo académico.</div>
+  <div data-key="values">Respeto a las diferencias, inclusión, accesibilidad, empatía, aprendizaje continuo y responsabilidad al compartir información.</div>
+</template>
+
+//ÁREA DE NEURODIVERGENCIA
+
+//AUTISMO
+<section id="neurodivergencias-data" hidden>
+<article class="neuro-data" data-id="autismo">
+  <h2 data-field="name">Trastorno del espectro autista</h2>
+  <div data-field="emoji">🧩</div>
+  <div data-field="image">assets/autismoPortada.jpg</div>
+  <p data-field="description">El autismo es una condición del neurodesarrollo que puede influir en la comunicación, la interacción social, el procesamiento de la información y la respuesta al entorno. Cada persona puede vivirlo de manera diferente; no existe una única forma de ser autista.</p>
+  <div data-field="characteristics">
+    <p>Comunicación e interacción social: puede haber diferencias al interpretar gestos, expresiones, tonos de voz o determinadas reglas sociales; algunas personas necesitan más tiempo para responder.</p>
+    <p>Sensibilidad a estímulos: ruidos, luces, olores o contacto físico pueden generar malestar o requerir ajustes del entorno.</p>
+    <p>Rutinas y predictibilidad: los cambios inesperados y las transiciones pueden resultar difíciles; anticipar lo que ocurrirá puede ayudar.</p>
+    <p>Intereses y concentración: algunos intereses específicos o intensos pueden favorecer la motivación y el aprendizaje.</p>
+    <p>Diferencias individuales: las características y necesidades de apoyo no son iguales para todas las personas.</p>
+  </div>
+    <p data-field="learning">En el entorno educativo, observa qué dificulta la participación. Utiliza instrucciones claras, anticipa cambios cuando sea posible, ofrece distintas formas de participar y relaciona actividades con los intereses del estudiante cuando resulte útil.</p>
+    <p data-field="communication">Usa oraciones cortas, voz calmada y orden cronológico. Da instrucciones concretas, evita dobles sentidos cuando generen confusión y espera entre 5 y 10 segundos antes de repetir una pregunta. No asumas que la falta de contacto visual significa falta de atención.</p>
+    <p data-field="considerations">Los niveles de apoyo varían. El documento describe Nivel 1 (necesita apoyo), Nivel 2 (necesita apoyo notable) y Nivel 3 (necesita apoyo muy notable); no se trata de medir a la persona como si tuviera mucho o poco autismo. Ajusta los apoyos a cada estudiante y evita interpretar automáticamente una reacción como desinterés o mala conducta.</p>
+  <div data-field="myths">
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>todas las personas autistas tienen las mismas características.</span>
+      </p><p><strong>Realidad</strong>
+        <span>las presentaciones y necesidades varían.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>si no mantiene contacto visual, no presta atención.</span>
+      </p><p><strong>Realidad</strong>
+        <span>la atención puede demostrarse de distintas maneras.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>no quiere convivir.</span>
+      </p><p><strong>Realidad</strong>
+        <span>puede tener dificultades para interpretar o participar en ciertas situaciones sociales, sin que eso signifique necesariamente que no quiera relacionarse.</span>
+      </p>
+    </article>
+  </div>
+  <div data-field="suggestions">
+    <p>Anticipa cambios de actividad, fechas y dinámicas; si es posible, escríbelos en una agenda o plataforma.</p>
+    <p>Da instrucciones concretas y en orden, y permite unos segundos extra para procesarlas y responder.</p>
+    <p>Reduce estímulos intensos cuando sea posible y ofrece un lugar tranquilo o una pausa sin obligar a la persona a usarlo.</p>
+    <p>Permite distintas formas de participar, como hablar, escribir una respuesta o aportar por chat.</p>
+    <p>No exijas contacto visual ni interpretes automáticamente el silencio como desinterés; pregunta qué apoyo le resulta útil.</p>
+  </div>
+  <div data-field="extra-image-1">assets/autismo.jpg</div>
+  <div data-field="extra-text-1"></div>
+  <div data-field="extra-image-2">assets/autismo2.jpg</div>
+  <div data-field="extra-text-2"></div>
+</article>
+
+//TDAH
+<article class="neuro-data" data-id="tdah">
+  <h2 data-field="name">TDAH</h2>
+  <div data-field="emoji">⚡</div>
+  <div data-field="image">assets/tdahportada.jpeg</div>
+  <p data-field="description">El trastorno por déficit de atención con hiperactividad (TDAH) es una condición que puede afectar la atención, la organización, la actividad motora y el control de impulsos. Puede presentarse en niños, jóvenes y adultos.</p>
+  <div data-field="characteristics"><p>Presentación predominantemente inatenta: dificultades para atender detalles, mantener la concentración, seguir instrucciones, organizar tareas, gestionar el tiempo o recordar objetos necesarios.</p>
+    <p>Presentación hiperactiva/impulsiva: inquietud motora, dificultad para permanecer sentado o esperar turno, hablar mucho o responder antes de que termine una pregunta.</p>
+    <p>Presentación combinada: reúne criterios de las presentaciones inatenta e hiperactiva/impulsiva.</p>
+    <p>En la universidad puede manifestarse como olvidos de entregas o materiales, distracciones, impulsividad al participar, inquietud o frustración al no alcanzar metas pese al esfuerzo.</p>
+    <p>Fortalezas que pueden presentarse: creatividad e innovación, hiper enfoque en temas de interés, energía y entusiasmo, flexibilidad, adaptabilidad y curiosidad por aprender.</p>
+  </div>
+  <p data-field="learning">Divide las tareas grandes en pasos, establece fechas y entregables claros, prioriza actividades y utiliza listas, calendarios o recordatorios oportunos. Confirma qué se debe entregar y cuándo.</p>
+  <p data-field="communication">Da instrucciones breves, concretas y secuenciadas, preferentemente también por escrito. Redirige la atención de forma respetuosa y establece oportunidades y reglas claras para participar.</p>
+  <p data-field="considerations">No todas las personas con TDAH son hiperactivas. Una distracción no significa automáticamente falta de interés. Las dificultades persistentes pueden afectar varias áreas de la vida cotidiana; los signos aislados no bastan para establecer un diagnóstico y las necesidades individuales deben valorarse.</p>
+  <div data-field="myths">
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>si una persona puede concentrarse en actividades que le gustan, no tiene TDAH.</span>
+      </p>
+      <p><strong>Realidad</strong>
+        <span>la atención puede variar según la tarea.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>una persona tranquila o introvertida no puede tener TDAH.</span>
+      </p>
+      <p><strong>Realidad</strong>
+        <span>la presentación inatenta puede pasar desapercibida.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+      <span>el TDAH implica menor inteligencia.</span>
+      </p>
+      <p><strong>Realidad</strong>
+        <span>no determina la inteligencia.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>no es importante si las calificaciones son buenas.</span>
+      </p>
+      <p><strong>Realidad</strong>
+        <span>puede haber dificultades en otras áreas de la vida.</span>
+      </p>
+    </article>
+  </div>
+    <div data-field="suggestions">
+      <p>Cuando la persona lo prefiera, ubica su lugar en una zona con menos distractores visuales, lejos del paso constante, las puertas o las ventanas; acuerden juntos qué sitio le funciona mejor.</p>
+      <p>Al dar indicaciones, procura tener su atención de forma respetuosa, hablar con claridad y confirmar los pasos importantes sin avergonzarla.</p>
+      <p>Divide las tareas largas en pasos pequeños y visibles, con prioridades, tiempos y fechas de entrega claros.</p>
+      <p>Apoya las explicaciones orales con instrucciones escritas, listas de verificación o recordatorios.</p>
+      <p>Permite pausas breves de movimiento cuando sean viables y evita asumir que la inquietud equivale a falta de interés.</p>
+    </div>
+    <div data-field="extra-image-1">assets/tdahimg2.jpg</div>
+    <div data-field="extra-text-1"></div>
+    <div data-field="extra-image-2">assets/tdahima1.jpg</div>
+    <div data-field="extra-text-2"></div>
+</article>
+
+//DISLEXIA
+<article class="neuro-data" data-id="dislexia">
+  <h2 data-field="name">Dislexia</h2>
+  <div data-field="emoji">🔤</div>
+  <div data-field="image">assets/dislexiaPortada.jpg</div>
+  <p data-field="description">La dislexia es una dificultad específica del aprendizaje relacionada con la lectura. Se vincula con dificultades para identificar los sonidos del habla y aprender a relacionarlos con letras y palabras (decodificación). Puede afectar la lectura y la escritura.</p>
+  <div data-field="characteristics">
+    <p>Lectura y lenguaje: las dificultades suelen relacionarse con el componente fonológico y pueden ser inesperadas en relación con otras capacidades y la instrucción recibida.</p>
+    <p>Atención, organización y funciones ejecutivas: algunas personas pueden presentar dificultades adicionales en estas áreas.</p>
+    <p>Tiempo y espacio: pueden aparecer confusión izquierda/derecha o dificultades con conceptos de tiempo y espacio.</p>
+    <p>Otras áreas: pueden presentarse dificultades con matemáticas, escritura a mano, aprendizaje de idiomas o habilidades sociales.</p>
+    <p>Experiencia universitaria: los textos extensos, el vocabulario académico y la gestión autónoma del tiempo pueden requerir esfuerzo adicional.</p>
+  </div>
+  <p data-field="learning">Da tiempo suficiente para leer, divide textos extensos en partes y considera tecnología de apoyo, como programas de texto a voz. Cuando sea posible, permite que el estudiante solicite apoyos tecnológicos o adaptaciones.</p>
+  <p data-field="communication">Ofrece instrucciones claras y por escrito para que puedan revisarse. Comprueba qué parte del material resulta difícil sin señalar ni avergonzar a la persona.</p>
+  <p data-field="considerations">Evita burlas, etiquetas y comparaciones. Una dificultad en lectura y escritura no determina la inteligencia. No supongas que todas las personas muestran las mismas señales ni que la dislexia desaparece por aprender a leer.</p>
+  <div data-field="myths">
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>escribir letras al revés es la señal principal.</span>
+      </p><p><strong>Realidad</strong>
+        <span>algunas personas lo hacen y otras no.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>solo necesitan esforzarse más.</span>
+      </p><p><strong>Realidad</strong>
+        <span>pueden requerir intervención y apoyos adecuados.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>desaparece al aprender a leer.</span>
+      </p><p><strong>Realidad</strong>
+        <span>las intervenciones ayudan, pero no significan que la dificultad se haya curado.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>es un problema de visión.</span>
+      </p><p><strong>Realidad</strong>
+        <span>los problemas de visión no causan dislexia.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>solo ocurre en inglés.</span>
+      </p><p><strong>Realidad</strong>
+        <span>existe en todos los idiomas.</span>
+      </p>
+    </article>
+  </div>
+  <div data-field="suggestions">
+    <p>Entrega, cuando sea posible, instrucciones y materiales escritos con anticipación para que la persona pueda revisarlos a su ritmo.</p>
+    <p>Utiliza textos bien estructurados, títulos claros, párrafos breves y tipografía legible; evita saturar las páginas.</p>
+    <p>Cuando la lectura en voz alta no sea esencial para la actividad, ofrece alternativas para demostrar el aprendizaje.</p>
+    <p>Da tiempo suficiente para leer y revisar; valora el conocimiento del tema sin centrar toda la evaluación en la velocidad lectora.</p>
+    <p>Pregunta qué formatos le ayudan más, por ejemplo audio, texto digital accesible o apoyos visuales.</p>
+  </div>
+  <div data-field="extra-image-1">assets/dislexia2.png</div>
+  <div data-field="extra-text-1"></div>
+  <div data-field="extra-image-2">assets/dislexia3.jpg</div>
+  <div data-field="extra-text-2"></div>
+</article>
+
+//DISCALCULIA
+<article class="neuro-data" data-id="discalculia">
+  <h2 data-field="name">Discalculia</h2
+    ><div data-field="emoji">🔢</div>
+    <div data-field="image">assets/DISCALCULIAportada.jpeg</div>
+    <p data-field="description">La discalculia es una dificultad específica relacionada con el procesamiento de los números, el cálculo aritmético y la resolución de problemas matemáticos. Debe distinguirse de otras dificultades matemáticas que pueden relacionarse con la enseñanza u otros factores.</p>
+    <div data-field="characteristics">
+      <p>Números y cantidades: puede costar comprender las relaciones entre números, cantidades o conceptos matemáticos.</p>
+      <p>Cálculo y operaciones: puede haber dificultades para realizar operaciones o recordar procedimientos.</p>
+      <p>Símbolos y problemas: puede resultar difícil leer o utilizar símbolos numéricos, comprender el enunciado o determinar qué procedimiento usar.</p>
+      <p>Diferencias individuales: algunas personas presentan mayores dificultades con el cálculo y otras con cantidades, números o problemas.</p>
+      <p>Alcance: una dificultad específica en matemáticas no implica dificultades en todas las áreas académicas.</p>
+    </div>
+    <p data-field="learning">Utiliza representaciones visuales y ejemplos concretos. Divide los procedimientos en pasos pequeños y permite practicar cada paso antes de avanzar.</p>
+    <p data-field="communication">Ayuda a identificar qué información proporciona el problema, qué se necesita encontrar y qué operación o procedimiento puede utilizarse. Explica las relaciones matemáticas paso a paso.</p>
+    <p data-field="considerations">Identifica la parte específica de la actividad que representa una dificultad, en lugar de asumir que el estudiante tiene problemas con todas las matemáticas. No atribuyas los errores a falta de inteligencia o esfuerzo.</p>
+    <div data-field="myths">
+      <article class="myth-item">
+        <p><strong>Mito</strong>
+          <span>no entiende matemáticas porque no es inteligente.</span>
+        </p>
+        <p><strong>Realidad</strong>
+          <span>una dificultad específica no determina la inteligencia general.</span>
+        </p>
+      </article>
+      <article class="myth-item">
+        <p><strong>Mito</strong>
+          <span>todas las personas con discalculia tienen las mismas dificultades.</span>
+        </p>
+        <p><strong>Realidad</strong>
+          <span>varían.</span>
+        </p>
+      </article>
+      <article class="myth-item">
+        <p><strong>Mito</strong>
+          <span>solo necesita estudiar más.</span>
+        </p>
+        <p><strong>Realidad</strong>
+          <span>además de práctica, puede necesitar estrategias de enseñanza y apoyos adecuados.</span>
+        </p>
+      </article>
+    </div>
+    <div data-field="suggestions">
+      <p>Explica los procedimientos paso a paso y muestra un ejemplo resuelto antes de pedir que se realice uno nuevo.</p>
+      <p>Usa apoyos visuales, objetos, diagramas, tablas o líneas numéricas para representar cantidades y relaciones.</p>
+      <p>Permite consultar fórmulas o una lista de pasos cuando el objetivo sea evaluar el razonamiento y no la memorización.</p>
+      <p>Separa los problemas extensos en partes y destaca los datos relevantes sin resolver la actividad por la persona.</p>
+      <p>Ofrece tiempo para revisar operaciones y pregunta qué representación o estrategia le resulta más clara.</p>
+    </div><div data-field="extra-image-1">assets/DISCALCULIAimg1.jpeg</div>
+    <div data-field="extra-text-1"></div>
+    <div data-field="extra-image-2">assets/DISCALCULIAimg2.jpeg</div>
+    <div data-field="extra-text-2"></div>
+  </article>
+<article class="neuro-data" data-id="dispraxia">
+  <h2 data-field="name">Dispraxia / Trastorno del Desarrollo de la Coordinación (TDC)</h2>
+  <div data-field="emoji">🤲</div><div data-field="image">assets/portada_dispraxia.jpg</div>
+  <p data-field="description">El Trastorno del Desarrollo de la Coordinación (TDC), también llamado dispraxia en algunos contextos, afecta la coordinación de los movimientos y puede hacer que actividades cotidianas, escolares o físicas sean más difíciles de realizar de acuerdo con lo esperado para la edad.</p>
+  <div data-field="characteristics"><p>Coordinación y movimiento: puede haber dificultades para correr, saltar, atrapar objetos, subir escaleras o participar en actividades deportivas; también pueden ocurrir tropiezos.</p>
+    <p>Escritura y actividades manuales: puede costar escribir, dibujar, usar tijeras o realizar actividades que requieren coordinación fina.</p>
+    <p>Aprender movimientos nuevos: algunas habilidades físicas o secuencias pueden requerir más práctica y tiempo.</p>
+    <p>Organización y seguimiento: puede haber dificultades para copiar información, seguir instrucciones o realizar tareas con varios pasos.</p>
+    <p>Diferencias individuales: algunas personas necesitan más apoyo en la escritura y otras en las actividades físicas o de precisión.</p>
+  </div>
+  <p data-field="learning">Divide las actividades complejas en pasos pequeños, explica cada parte con claridad y permite tiempo para practicar. Cuando sea apropiado, considera el uso de computadora u otras adaptaciones para reducir la dificultad motora sin cambiar el objetivo académico.</p>
+  <p data-field="communication">Explica las instrucciones de manera secuencial y pregunta qué ajuste práctico puede ayudar. Identifica qué parte de la actividad genera la dificultad.</p>
+  <p data-field="considerations">No interpretes automáticamente una dificultad motora como falta de esfuerzo o interés. El apoyo debe facilitar la participación y el logro del objetivo, sin exigir que la persona haga la actividad exactamente de la misma manera que sus compañeros.</p>
+  <div data-field="myths">
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>es torpe porque no presta atención.</span>
+      </p>
+      <p><strong>Realidad</strong>
+        <span>la dificultad de coordinación puede formar parte del TDC.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>solo afecta los deportes.</span>
+      </p><p><strong>Realidad</strong>
+        <span>también puede afectar escribir, dibujar, usar tijeras o copiar información.</span>
+      </p>
+    </article>
+    <article class="myth-item">
+      <p><strong>Mito</strong>
+        <span>todas las personas tienen las mismas dificultades.</span>
+      </p><p><strong>Realidad</strong>
+        <span>la presentación y los apoyos necesarios varían.</span>
+      </p>
+    </article>
+  </div>
+  <div data-field="suggestions">
+    <p>Ofrece instrucciones por etapas y, si ayuda, acompáñalas con una demostración visual o una lista de pasos.</p>
+    <p>Permite tiempo adicional en tareas de escritura manual, recorte, montaje o actividades que requieren coordinación fina.</p>
+    <p>Facilita herramientas digitales o formatos alternativos cuando la escritura a mano no sea el objetivo principal.</p>
+    <p>Mantén los materiales organizados y despeja rutas de paso para reducir obstáculos físicos innecesarios.</p>
+    <p>Evita llamar a la persona “torpe”; pregunta qué adaptación facilitaría la actividad y respeta su autonomía.</p>
+  </div>
+  <div data-field="extra-image-1">assets/dispraxiaimg.jpg</div>
+  <div data-field="extra-text-1"></div>
+  <div data-field="extra-image-2">assets/dispraxiaimg2.jpg</div>
+  <div data-field="extra-text-2"></div>
+</article>
+</section>
+//SECCION DE GUIAS 
+<section id="guias-data" hidden>
+<article class="guide-data" data-id="autismo-sobrecarga" data-neurodivergencias="autismo" data-situaciones="sobrecarga,estimulos,aula,atencion">
+  <h2 data-field="title">Sobrecarga de estímulos</h2>
+  <div data-field="category">Sobrecarga y entorno</div>
+  <div data-field="emoji">🔊</div>
+    <p data-field="description">Identifica posibles señales de sobrecarga sensorial y cómo reducir estímulos sin invadir el espacio personal.</p>
+  <div data-field="neuro">Autismo</div>
+  <div data-field="steps">
+    <p>Reduce ruidos, luces, olores u otros estímulos que sea posible disminuir.</p>
+    <p>Guía a la persona a un espacio tranquilo, silencioso y con luz tenue.</p>
+    <p>Permanece cerca para cuidar la seguridad, sin invadir el espacio corporal.</p>
+    <p>Da espacio y tiempo; no exijas que hable o participe de inmediato.</p>
+    <p>Facilita herramientas de autorregulación, como auriculares o un objeto manipulable, si la persona las utiliza.</p>
+  </div>
+  <div data-field="avoid">
+    <p>Tocar sin consentimiento explícito.</p>
+    <p>Hacer preguntas complejas, regañar u obligar a hablar durante la sobrecarga.</p>
+    <p>Aumentar el ruido o reunir personas alrededor.</p>
+  </div>
+  <ol data-field="questions">
+    <li data-correct="a">
+      <span>¿Qué es la sobrecarga de estímulos?</span>
+      <p data-option="a">Un colapso en el que se recibe más información sensorial de la que se puede procesar.</p>
+      <p data-option="b">Una conducta para llamar la atención.</p><p data-option="c">Falta de ganas de trabajar.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cuál puede ser una señal física de sobrecarga?</span>
+      <p data-option="a">Pedir participar más.</p>
+      <p data-option="b">Taparse los oídos u ojos, balancearse intensamente o respirar agitadamente.</p>
+      <p data-option="c">Sonreír constantemente.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué conviene hacer primero?</span>
+      <p data-option="a">Aumentar el ruido para distraer.</p>
+      <p data-option="b">Reducir estímulos innecesarios cuando sea posible.</p>
+      <p data-option="c">Exigir una respuesta inmediata.</p>
+    </li>
+    <li data-correct="a">
+      <span>¿Qué debe evitarse durante una sobrecarga?</span>
+      <p data-option="a">Tocar sin consentimiento, hacer preguntas complejas o regañar.</p>
+      <p data-option="b">Guiar a un espacio tranquilo.</p>
+      <p data-option="c">Dar espacio y tiempo.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cómo cuidar la seguridad durante una crisis?</span>
+      <p data-option="a">Sujetar fuertemente a la persona.</p>
+      <p data-option="b">Permanecer cerca sin invadir su espacio corporal.</p>
+      <p data-option="c">Llevarla al centro del salón.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cómo reducir estímulos del entorno?</span>
+      <p data-option="a">Poner música alta.</p>
+      <p data-option="b">Apagar luces fluorescentes, silenciar dispositivos y bajar la voz.</p>
+      <p data-option="c">Hacer preguntas complejas.</p>
+    </li>
+  </ol>
+</article>
+<article class="guide-data" data-id="autismo-comunicacion" data-neurodivergencias="autismo" data-situaciones="comunicacion,clase,instrucciones">
+  <h2 data-field="title">Comunicación clara</h2>
+  <div data-field="category">Comunicación</div>
+  <div data-field="emoji">💬</div>
+  <p data-field="description">Pautas para dar instrucciones comprensibles y respetar el tiempo de procesamiento.</p>
+  <div data-field="neuro">Autismo</div>
+  <div data-field="steps">
+    <p>Usa oraciones cortas, voz calmada y un orden claro.</p>
+    <p>Da instrucciones concretas y, cuando sea útil, por escrito.</p>
+    <p>Evita sarcasmo, ironías o dobles sentidos cuando puedan generar confusión.</p>
+    <p>Espera entre 5 y 10 segundos antes de repetir una pregunta.</p>
+    <p>No asumas que evitar el contacto visual significa falta de atención; confirma comprensión con respeto.</p>
+  </div>
+  <div data-field="avoid">
+    <p>Dar instrucciones vagas o demasiado extensas.</p>
+    <p>Interpretar el silencio como ignorancia o falta de atención.</p>
+    <p>Preguntar de forma que la persona se sienta señalada.</p>
+  </div>
+  <ol data-field="questions">
+    <li data-correct="a">
+      <span>¿Cómo debe ser una instrucción?</span>
+      <p data-option="a">Corta, concreta, ordenada y con voz calmada.</p>
+      <p data-option="b">Con sarcasmo y dobles sentidos.</p>
+      <p data-option="c">Larga y con mucha información a la vez.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cuál es un ejemplo de instrucción concreta?</span>
+      <p data-option="a">Termina pronto.</p>
+      <p data-option="b">Escribe las conclusiones de la página 3 y entrégalas a las 4:00 p. m.</p>
+      <p data-option="c">Échale ganas.</p>
+    </li>
+    <li data-correct="a">
+      <span>¿Por qué evitar dobles sentidos, sarcasmo e ironías?</span>
+      <p data-option="a">El procesamiento puede ser literal y generar confusión.</p>
+      <p data-option="b">Porque es divertido.</p>
+      <p data-option="c">Porque no les gusta reírse.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cuánto tiempo esperar antes de repetir una pregunta?</span>
+      <p data-option="a">Un segundo.</p>
+      <p data-option="b">Entre 5 y 10 segundos.</p>
+      <p data-option="c">No esperar.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿La falta de contacto visual significa falta de atención?</span>
+      <p data-option="a">Sí, es falta de respeto.</p>
+      <p data-option="b">No necesariamente; mirar a los ojos puede dificultar escuchar para algunas personas.</p>
+      <p data-option="c">Sí, significa desinterés.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cómo confirmar que comprendió sin señalar?</span>
+      <p data-option="a">Preguntar frente a todos si entendió porque es obvio.</p>
+      <p data-option="b">Pedir que explique con sus palabras el primer paso.</p>
+      <p data-option="c">Asumir que el silencio significa que sí.</p>
+    </li>
+  </ol>
+</article>
+<article class="guide-data" data-id="autismo-trabajo-equipo" data-neurodivergencias="autismo" data-situaciones="trabajo-equipo,colaboracion,convivencia">
+  <h2 data-field="title">Trabajo en equipo</h2>
+  <div data-field="category">Convivencia y colaboración</div>
+  <div data-field="emoji">🤝</div>
+  <p data-field="description">Organiza las actividades y distribuye responsabilidades de forma clara, aprovechando distintas maneras de participar.</p>
+  <div data-field="neuro">Autismo</div>
+  <div data-field="steps">
+    <p>Estructura el trabajo con listas de tareas y calendarios compartidos.</p>
+    <p>Asigna roles concretos según fortalezas e intereses individuales.</p>
+    <p>Permite aportaciones por escrito o asincrónicas cuando sea viable.</p>
+    <p>Acuerda por escrito canales, horarios, entregables y formatos.</p>
+    <p>Comunica inmediatamente cambios de integrantes o fechas y explica el nuevo plan.</p>
+  </div>
+  <div data-field="avoid">
+    <p>Obligar a que toda lluvia de ideas sea únicamente verbal y caótica.</p>
+    <p>Dejar responsabilidades implícitas o cambiar reglas constantemente.</p>
+    <p>Asumir que una forma distinta de participar es falta de compromiso.</p>
+  </div>
+  <ol data-field="questions">
+    <li data-correct="a">
+      <span>¿Cómo organizar las actividades del equipo?</span>
+      <p data-option="a">Con listas de tareas y calendarios digitales compartidos.</p>
+      <p data-option="b">Dejando todo a la improvisación.</p>
+      <p data-option="c">Solo con instrucciones verbales rápidas.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cómo distribuir responsabilidades?</span>
+      <p data-option="a">Que todos hagan todo sin orden.</p>
+      <p data-option="b">Asignar roles específicos según las fortalezas individuales.</p>
+      <p data-option="c">Que una persona decida todo.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué debe evitarse al pedir ideas?</span>
+      <p data-option="a">Permitir aportes por escrito.</p>
+      <p data-option="b">Obligar a que la lluvia de ideas sea únicamente verbal y caótica.</p>
+      <p data-option="c">Usar chat o notas.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué establecer desde el primer día?</span>
+      <p data-option="a">Nada.</p>
+      <p data-option="b">Normas escritas: canales, horarios y formatos.</p>
+      <p data-option="c">Cambiar las reglas a diario.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cómo comunicar un cambio de integrante o fecha?</span>
+      <p data-option="a">No decir nada.</p>
+      <p data-option="b">Avisar pronto con un mensaje claro que explique el nuevo plan.</p>
+      <p data-option="c">Esperar que el equipo lo adivine.</p>
+    </li>
+    <li data-correct="a">
+      <span>¿Qué favorece una colaboración inclusiva?</span>
+      <p data-option="a">Listas visuales, roles claros y aportes por escrito cuando sea posible.</p>
+      <p data-option="b">Solo lluvia de ideas verbal y caótica.</p>
+      <p data-option="c">Observar fijamente a quien trabaja.</p>
+    </li>
+  </ol>
+</article>
+<article class="guide-data" data-id="autismo-examen" data-neurodivergencias="autismo" data-situaciones="examen,evaluacion,clase">
+  <h2 data-field="title">Situaciones durante un examen</h2>
+  <div data-field="category">Evaluación</div>
+  <div data-field="emoji">📝</div>
+  <p data-field="description">Reduce obstáculos ambientales y ofrece instrucciones explícitas para que el estudiante pueda demostrar sus conocimientos.</p>
+  <div data-field="neuro">Autismo</div>
+  <div data-field="steps">
+    <p>Permite sentarse lejos de distractores como ventanas o pasillos concurridos cuando sea posible.</p>
+    <p>Escribe instrucciones explícitas y evita trampas lingüísticas o interpretativas.</p>
+    <p>Utiliza un cronómetro visual silencioso en lugar de advertencias verbales constantes.</p>
+    <p>Ante señales de sobrecarga, considera una pausa o pase de salida discreto según los acuerdos disponibles.</p>
+    <p>Responde dudas de forma neutral y respetuosa.</p>
+  </div>
+  <div data-field="avoid">
+    <p>Quitar el examen abruptamente.</p>
+    <p>Invalidar dudas como si fueran obvias.</p>
+    <p>Pararse detrás del asiento y observar fijamente.</p>
+  </div>
+  <ol data-field="questions">
+    <li data-correct="a">
+      <span>¿Qué hacer si hay dificultad relacionada con el ambiente?</span>
+      <p data-option="a">Permitir sentarse lejos de ventanas o pasillos concurridos.</p>
+      <p data-option="b">Sentar junto a una fuente de ruido.</p>
+      <p data-option="c">Sentar en medio del ruido.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué genera presión innecesaria?</span>
+      <p data-option="a">Usar un cronómetro visual silencioso.</p>
+      <p data-option="b">Recordar constantemente el tiempo en tono de advertencia.</p>
+      <p data-option="c">Escribir instrucciones explícitas.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cómo deben ser las instrucciones del examen?</span>
+      <p data-option="a">Con trampas lingüísticas.</p>
+      <p data-option="b">Explícitas y sin trampas interpretativas.</p>
+      <p data-option="c">Solo verbales y rápidas.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué hacer ante una posible sobrecarga?</span>
+      <p data-option="a">Quitar el examen abruptamente.</p>
+      <p data-option="b">Considerar un pase discreto para caminar o tomar agua, según los acuerdos.</p>
+      <p data-option="c">Observar fijamente al estudiante.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué se debe evitar durante el examen?</span>
+      <p data-option="a">Responder dudas con neutralidad.</p>
+      <p data-option="b">Invalidar dudas por considerarlas obvias o quitar el examen abruptamente.</p>
+      <p data-option="c">Permitir herramientas de autorregulación acordadas.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cuál es el objetivo de adaptar el entorno?</span>
+      <p data-option="a">Dar una ventaja académica.</p>
+      <p data-option="b">Reducir la carga sensorial para que pueda demostrar sus conocimientos.</p>
+      <p data-option="c">Hacer más fácil el contenido.</p>
+    </li>
+  </ol>
+</article>
+<article class="guide-data" data-id="autismo-cambios" data-neurodivergencias="autismo" data-situaciones="cambios,transiciones,organizacion">
+  <h2 data-field="title">Cambios inesperados</h2>
+  <div data-field="category">Rutinas y transiciones</div>
+  <div data-field="emoji">🔄</div>
+  <p data-field="description">Comunica modificaciones de manera clara y anticipada, y da tiempo para adaptarse a una nueva rutina.</p>
+  <div data-field="neuro">Autismo</div>
+  <div data-field="steps">
+    <p>Comunica el cambio de forma asertiva y objetiva, usando apoyos visuales si es posible.</p>
+    <p>Avisa tan pronto como se conozca el cambio, por correo o mensaje.</p>
+    <p>Explica el nuevo plan, el lugar, la hora y los pasos siguientes.</p>
+    <p>Permite una ventana de transición antes de exigir rendimiento pleno.</p>
+  </div>
+  <div data-field="avoid">
+    <p>Usar frases vagas como «al rato vemos».</p>
+    <p>Avisar a última hora sin explicar.</p>
+    <p>Exigir una transición inmediata sin tiempo de adaptación.</p>
+  </div>
+  <ol data-field="questions">
+    <li data-correct="a">
+      <span>¿Cómo comunicar un cambio?</span>
+      <p data-option="a">De forma asertiva, objetiva y con apoyos visuales si es posible.</p>
+      <p data-option="b">Con frases vagas.</p>
+      <p data-option="c">Gritándolo en el último segundo.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cuándo avisar de un cambio?</span>
+      <p data-option="a">Nunca.</p>
+      <p data-option="b">Con la mayor anticipación posible por correo o mensaje.</p>
+      <p data-option="c">Dos minutos antes sin explicar.</p>
+    </li>
+    <li data-correct="a">
+      <span>¿Por qué puede ayudar la predictibilidad?</span>
+      <p data-option="a">Porque saber qué ocurrirá puede reducir la incertidumbre y facilitar la adaptación.</p>
+      <p data-option="b">Porque no le gusta estudiar.</p><p data-option="c">Porque toda conducta es aprendida.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué frase conviene evitar?</span>
+      <p data-option="a">La clase cambia al salón B a las 10:00.</p>
+      <p data-option="b">Al rato vemos dónde nos acomodamos.</p>
+      <p data-option="c">Te envío el nuevo plan con hora y lugar.</p>
+    </li>
+    <li data-correct="a">
+      <span>¿Cómo comunicar un cambio inesperado?</span>
+      <p data-option="a">Con anticipación, objetividad y apoyo visual cuando sea posible.</p>
+      <p data-option="b">Con frases vagas.</p><p data-option="c">Avisando dos minutos antes sin explicar.</p>
+    </li><li data-correct="b">
+      <span>¿Qué hacer después del cambio?</span>
+      <p data-option="a">Exigir rendimiento óptimo inmediato.</p>
+      <p data-option="b">Permitir una ventana de transición.</p>
+      <p data-option="c">Asignar un examen sorpresa.</p>
+    </li>
+  </ol>
+</article>
+<article class="guide-data" data-id="autismo-participacion" data-neurodivergencias="autismo" data-situaciones="participacion,clase,impulsividad">
+  <h2 data-field="title">Participación en clase</h2>
+  <div data-field="category">Participación inclusiva</div>
+  <div data-field="emoji">🙋</div>
+  <p data-field="description">Ofrece distintas formas de participar y evita medir el conocimiento únicamente por la exposición oral o la extroversión.</p>
+  <div data-field="neuro">Autismo</div>
+  <div data-field="steps">
+    <p>Permite participar por chat, encuestas, notas o ensayos breves.</p>
+    <p>Da tiempo para preparar respuestas y evita preguntas al azar frente al grupo.</p>
+    <p>En debates o dinámicas, ofrece roles como moderador escrito, evaluador o documentador.</p>
+    <p>Evalúa el conocimiento y los objetivos de aprendizaje, no la extroversión.</p>
+  </div>
+  <div data-field="avoid">
+    <p>Obligar a participar oralmente como única opción.</p>
+    <p>Exigir respuestas inmediatas delante del grupo.</p>
+    <p>Interpretar que no hablar equivale a no saber.</p>
+  </div>
+  <ol data-field="questions">
+    <li data-correct="b">
+      <span>¿Cuál es una forma válida de participar?</span>
+      <p data-option="a">Solo hablando frente a todos.</p>
+      <p data-option="b">Chats, encuestas, ensayos breves o notas escritas.</p>
+      <p data-option="c">Si no habla, no participa.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué se debe evitar al preguntar?</span>
+      <p data-option="a">Permitir una respuesta escrita después.</p>
+      <p data-option="b">Lanzar preguntas al azar frente a todo el grupo.</p>
+      <p data-option="c">Dar tiempo para preparar.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿La exposición pública obligatoria puede ser?</span>
+      <p data-option="a">La única forma de evaluar.</p>
+      <p data-option="b">Un detonante de ansiedad intensa.</p>
+      <p data-option="c">Obligatoria sin excepción.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué rol inclusivo puede ofrecerse en una dinámica?</span>
+      <p data-option="a">Obligar a actuar aunque cause malestar.</p>
+      <p data-option="b">Moderador escrito, evaluador o documentador.</p>
+      <p data-option="c">Excluir a la persona.</p>
+    </li>
+    <li data-correct="a">
+      <span>¿Cómo medir la competencia académica?</span>
+      <p data-option="a">Por el conocimiento, no por la extroversión.</p>
+      <p data-option="b">Por quién habla más fuerte.</p>
+      <p data-option="c">Por quién mira más a los ojos.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué afirmación es incorrecta?</span>
+      <p data-option="a">Diseñar métodos alternativos.</p>
+      <p data-option="b">Si no participa oralmente, no sabe.</p>
+      <p data-option="c">La participación puede ser asincrónica.</p>
+    </li>
+  </ol>
+</article>
+<article class="guide-data" data-id="autismo-retroalimentacion" data-neurodivergencias="autismo" data-situaciones="retroalimentacion,organizacion,mejora">
+  <h2 data-field="title">Retroalimentación</h2>
+  <div data-field="category">Retroalimentación y mejora</div>
+  <div data-field="emoji">🗒️</div>
+  <p data-field="description">Da comentarios específicos, privados y estructurados para que la persona pueda revisar qué conservar y qué mejorar.</p>
+  <div data-field="neuro">Autismo</div>
+  <div data-field="steps">
+    <p>Ofrece retroalimentación en privado y, cuando sea útil, por escrito.</p>
+    <p>Organiza los comentarios: puntos positivos y después aspectos a mejorar.</p>
+    <p>Separa a la persona del trabajo o conducta que se está revisando.</p>
+    <p>Indica acciones concretas, por ejemplo, qué sección corregir o qué referencia agregar.</p>
+  </div>
+  <div data-field="avoid">
+    <p>Gritar o corregir frente al grupo.</p>
+    <p>Usar frases ambiguas como «dale otra pasada» o «ponle más ganas».</p>
+    <p>Personalizar el error o atribuir malas intenciones.</p>
+  </div>
+  <ol data-field="questions">
+    <li data-correct="b">
+      <span>¿Cómo dar retroalimentación clara?</span>
+      <p data-option="a">Gritando frente al grupo.</p>
+      <p data-option="b">En privado, estructurada y por escrito cuando sea útil.</p>
+      <p data-option="c">Con indirectas.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cómo separar persona y conducta?</span>
+      <p data-option="a">Decir que siempre hace todo mal.</p>
+      <p data-option="b">Indicar que el reporte necesita ajustes.</p>
+      <p data-option="c">Personalizar el error.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué comentario ambiguo conviene evitar?</span>
+      <p data-option="a">En página 2 agrega dos referencias APA.</p>
+      <p data-option="b">Dale otra pasada o ponle más ganas.</p>
+      <p data-option="c">Cambia el orden de las secciones.</p>
+    </li>
+    <li data-correct="a">
+      <span>¿Cómo dar una corrección útil?</span>
+      <p data-option="a">En privado, neutral, específica y con ejemplo.</p>
+      <p data-option="b">En voz alta frente a todos.</p>
+      <p data-option="c">Con frases ambiguas.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Por qué puede ayudar darla por escrito?</span>
+      <p data-option="a">Para regañar después.</p>
+      <p data-option="b">Para revisar la información sin la carga emocional del momento.</p>
+      <p data-option="c">No sirve.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué significa ser específico?</span>
+      <p data-option="a">Decir «mejóralo».</p>
+      <p data-option="b">Indicar exactamente qué se espera del trabajo revisado.</p>
+      <p data-option="c">Decir «no me gustó».</p>
+    </li>
+  </ol>
+</article>
+<article class="guide-data" data-id="autismo-correccion" data-neurodivergencias="autismo" data-situaciones="correccion,convivencia,respeto">
+  <h2 data-field="title">Corrección respetuosa</h2>
+  <div data-field="category">Corrección y respeto</div>
+  <div data-field="emoji">🧭</div>
+  <p data-field="description">Explica el error de forma neutral y privada, y muestra el procedimiento correcto sin avergonzar.</p>
+  <div data-field="neuro">Autismo</div>
+  <div data-field="steps">
+    <p>Usa un tono neutral, sin sarcasmo ni enojo.</p>
+    <p>Describe qué ocurrió sin juzgar la intención.</p>
+    <p>Muestra un ejemplo o modelo visual del procedimiento correcto, paso a paso.</p>
+    <p>Habla en privado cuando sea necesario corregir un error conceptual o una conducta de autorregulación.</p>
+  </div>
+  <div data-field="avoid">
+    <p>Avergonzar a la persona frente al grupo.</p>
+    <p>Interpretar automáticamente una reacción emocional como falta de respeto.</p>
+    <p>Juzgar la intención en lugar de describir el hecho.</p>
+  </div>
+  <ol data-field="questions">
+    <li data-correct="a">
+      <span>¿Cómo corregir de manera respetuosa?</span>
+      <p data-option="a">Con tono neutro y hechos objetivos, sin sarcasmo.</p>
+      <p data-option="b">Con enojo frente a todos.</p>
+      <p data-option="c">Burlándose.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué hacer después de explicar qué ocurrió?</span>
+      <p data-option="a">Dejar a la persona sola.</p>
+      <p data-option="b">Mostrar cómo hacerlo correctamente con un ejemplo paso a paso.</p>
+      <p data-option="c">Decirle que lo averigüe.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Qué se debe evitar al corregir?</span>
+      <p data-option="a">Agendar una charla privada.</p>
+      <p data-option="b">Avergonzar a la persona frente al grupo.</p>
+      <p data-option="c">Corregir en privado.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Dónde corregir un error conceptual o una conducta de autorregulación?</span>
+      <p data-option="a">En voz alta delante de todos.</p>
+      <p data-option="b">En privado, sin exponerla ante compañeros.</p>
+      <p data-option="c">Publicándolo en el grupo.</p>
+    </li>
+    <li data-correct="b">
+      <span>¿Cómo describir el error?</span>
+      <p data-option="a">Juzgando la intención.</p><p data-option="b">Describir lo ocurrido sin juzgar la intención.</p><p data-option="c">Decir que lo hizo a propósito.</p></li><li data-correct="b"><span>Si evita la mirada o se balancea al corregir, ¿qué conviene recordar?</span><p data-option="a">Que es falta de respeto.</p><p data-option="b">Puede ser una forma de procesar frustración o ansiedad.</p><p data-option="c">Que no le importa.</p></li></ol></article>
+<article class="guide-data" data-id="tdah-sobrecarga" data-neurodivergencias="tdah" data-situaciones="sobrecarga,estimulos,aula,atencion"><h2 data-field="title">Sobrecarga y estímulos</h2><div data-field="category">Atención y entorno</div><div data-field="emoji">🔊</div><p data-field="description">Reduce distractores y divide las instrucciones para apoyar la atención y la regulación durante actividades académicas.</p><div data-field="neuro">TDAH</div><div data-field="steps"><p>Reduce estímulos innecesarios y evita interrupciones que no sean necesarias.</p><p>Da una instrucción a la vez y divide la actividad en pasos.</p><p>Usa listas, recordatorios visuales y organización del tiempo.</p><p>Si pierde la concentración, redirige la atención con respeto y una indicación concreta.</p></div><div data-field="avoid"><p>Dar muchas instrucciones juntas.</p><p>Añadir distractores o interrupciones innecesarias.</p><p>Ridiculizar o quitar la actividad como castigo por distraerse.</p></div><ol data-field="questions"><li data-correct="b"><span>¿Qué puede contribuir a una sobrecarga de estímulos?</span><p data-option="a">Un ambiente silencioso.</p><p data-option="b">Exceso de estímulos, ruido y muchas instrucciones a la vez.</p><p data-option="c">Una tarea clara.</p></li><li data-correct="b"><span>¿Qué hacer primero ante la sobrecarga?</span><p data-option="a">Dar cinco instrucciones juntas.</p><p data-option="b">Reducir estímulos, dar una instrucción a la vez y acordar apoyos.</p><p data-option="c">Añadir distractores.</p></li><li data-correct="b"><span>¿Qué debe evitar el entorno?</span><p data-option="a">Usar calendarios compartidos.</p><p data-option="b">Interrupciones innecesarias y cambios sin avisar.</p><p data-option="c">Mantener comunicación clara.</p></li><li data-correct="b"><span>¿Qué ayuda a reducir distracciones?</span><p data-option="a">Música alta.</p><p data-option="b">Organizar tiempo, reducir distractores y usar recordatorios visuales.</p><p data-option="c">Luces parpadeantes.</p></li><li data-correct="b"><span>¿Qué hacer si pierde la concentración?</span><p data-option="a">Ridiculizar.</p><p data-option="b">Redirigir la atención con respeto e instrucción concreta.</p><p data-option="c">Quitarle todo el trabajo.</p></li><li data-correct="b"><span>¿Qué puede ayudar ante una posible sobrecarga?</span><p data-option="a">Aumentar el ruido.</p><p data-option="b">Reducir estímulos y dividir las tareas.</p><p data-option="c">Exigir respuesta inmediata.</p></li></ol></article>
+<article class="guide-data" data-id="tdah-comunicacion" data-neurodivergencias="tdah" data-situaciones="comunicacion,clase,instrucciones"><h2 data-field="title">Comunicación e instrucciones</h2><div data-field="category">Instrucciones claras</div><div data-field="emoji">💬</div><p data-field="description">Da indicaciones concretas, secuenciadas y fáciles de revisar; confirma entregables y fechas.</p><div data-field="neuro">TDAH</div><div data-field="steps"><p>Da instrucciones claras, concretas, por pasos y también por escrito cuando sea útil.</p><p>Evita indicaciones generales como «haz lo que puedas».</p><p>Confirma qué se debe entregar, en qué formato y cuándo.</p><p>Usa recordatorios o acuerdos visibles y mantén comunicación clara.</p></div><div data-field="avoid"><p>Cambiar el plan sin avisar.</p><p>Interrumpir constantemente.</p><p>Suponer que el silencio confirma que todo quedó claro.</p></div><ol data-field="questions"><li data-correct="b"><span>¿Cómo deben ser las instrucciones?</span><p data-option="a">Demasiado generales.</p><p data-option="b">Claras, concretas, por pasos y por escrito.</p><p data-option="c">Con indirectas.</p></li><li data-correct="b"><span>¿Qué conviene evitar?</span><p data-option="a">Confirmar qué se entrega.</p><p data-option="b">Instrucciones demasiado generales como «haz lo que puedas».</p><p data-option="c">Recordatorios oportunos.</p></li><li data-correct="b"><span>¿Cómo mantener comunicación clara?</span><p data-option="a">Cambiar el plan sin avisar.</p><p data-option="b">Usar recordatorios, acuerdos del equipo y comunicación clara.</p><p data-option="c">Interrumpir constantemente.</p></li><li data-correct="b"><span>¿Cómo confirmar que comprendió?</span><p data-option="a">Asumir que el silencio significa sí.</p><p data-option="b">Confirmar con sus palabras qué debe entregar y cuándo.</p><p data-option="c">No confirmar.</p></li><li data-correct="b"><span>¿Cómo debe ser una instrucción?</span><p data-option="a">Larga y general.</p><p data-option="b">Corta, concreta, ordenada y con fecha clara.</p><p data-option="c">Con sarcasmo.</p></li><li data-correct="b"><span>¿Qué hacer si hay distracción por instrucciones confusas?</span><p data-option="a">Regañar.</p><p data-option="b">Aclarar la instrucción y evitar interrupciones innecesarias.</p><p data-option="c">Dar instrucciones más confusas.</p></li></ol></article>
+<article class="guide-data" data-id="tdah-trabajo-equipo" data-neurodivergencias="tdah" data-situaciones="trabajo-equipo,colaboracion,convivencia"><h2 data-field="title">Trabajo en equipo</h2><div data-field="category">Convivencia y colaboración</div><div data-field="emoji">🤝</div><p data-field="description">Distribuye tareas, acuerda responsabilidades y fechas y usa apoyos que ayuden a recordar los compromisos.</p><div data-field="neuro">TDAH</div><div data-field="steps"><p>Divide tareas grandes en pasos pequeños.</p><p>Establece responsabilidades, fechas y entregables claros.</p><p>Utiliza listas, checklists, calendarios compartidos y recordatorios.</p><p>Mantén acuerdos visibles y comunicación clara.</p><p>No asumas que una distracción significa falta de interés.</p></div><div data-field="avoid"><p>Dejar tareas enormes sin dividir ni fecha.</p><p>Cambiar responsabilidades constantemente.</p><p>Interpretar automáticamente una distracción como flojera o falta de compromiso.</p></div><ol data-field="questions"><li data-correct="b"><span>¿Cómo distribuir tareas?</span><p data-option="a">Dar una tarea enorme sin dividir.</p><p data-option="b">Dividir tareas grandes en pasos claros.</p><p data-option="c">No establecer fechas.</p></li><li data-correct="b"><span>¿Cómo establecer responsabilidades?</span><p data-option="a">Que nadie sepa qué hace.</p><p data-option="b">Definir responsabilidades, fechas y entregables.</p><p data-option="c">Cambiar tareas constantemente.</p></li><li data-correct="b"><span>¿Qué ayuda a cumplir entregas?</span><p data-option="a">No recordar nunca.</p><p data-option="b">Recordar entregas importantes y usar recordatorios.</p><p data-option="c">Comunicar solo verbalmente y sin detalles.</p></li><li data-correct="b"><span>¿Una distracción significa falta de interés?</span><p data-option="a">Siempre es flojera.</p><p data-option="b">No debe asumirse automáticamente.</p><p data-option="c">Siempre es falta de compromiso.</p></li><li data-correct="b"><span>¿Qué favorece el trabajo en equipo?</span><p data-option="a">Presión y lluvia de ideas caótica.</p><p data-option="b">Listas, roles claros, fechas y participación por escrito cuando sea viable.</p><p data-option="c">Observar fijamente a la persona.</p></li><li data-correct="b"><span>¿Qué herramienta puede ayudar al equipo?</span><p data-option="a">Asumir desinterés.</p><p data-option="b">Listas, checklists y calendarios compartidos.</p><p data-option="c">Instrucciones confusas.</p></li></ol></article>
+<article class="guide-data" data-id="tdah-examen" data-neurodivergencias="tdah" data-situaciones="examen,evaluacion,clase"><h2 data-field="title">Situaciones durante un examen</h2><div data-field="category">Evaluación</div><div data-field="emoji">📝</div><p data-field="description">Facilita instrucciones claras, control visual del tiempo y un entorno con menos interrupciones.</p><div data-field="neuro">TDAH</div><div data-field="steps"><p>Permite ubicarse lejos de distractores cuando sea posible.</p><p>Presenta instrucciones claras y por escrito.</p><p>Divide el examen en bloques o ayuda a priorizar actividades y tiempo disponible.</p><p>Utiliza referencias visuales de tiempo y evita interrupciones innecesarias.</p><p>Ante distracciones, considera una pausa breve acordada y redirige con una instrucción concreta.</p></div><div data-field="avoid"><p>Presionar constantemente por el tiempo.</p><p>Invalidar dudas o quitar el examen abruptamente.</p><p>Añadir interrupciones o exponer al estudiante delante del grupo.</p></div><ol data-field="questions"><li data-correct="b"><span>¿Qué puede ayudar durante un examen?</span><p data-option="a">Sentarse junto a una ventana ruidosa.</p><p data-option="b">Menos distractores, instrucciones claras y organización del tiempo.</p><p data-option="c">Aumentar el ruido.</p></li><li data-correct="b"><span>¿Qué evitar durante el examen?</span><p data-option="a">Un cronómetro visual silencioso.</p><p data-option="b">Interrupciones innecesarias y presión constante por el tiempo.</p><p data-option="c">Instrucciones escritas.</p></li><li data-correct="b"><span>¿Cómo organizar el tiempo?</span><p data-option="a">Hacer todo de golpe sin orden.</p><p data-option="b">Dividir el examen en bloques y hacer visible el tiempo.</p><p data-option="c">No usar ninguna referencia de tiempo.</p></li><li data-correct="b"><span>¿Qué hacer ante distracciones?</span><p data-option="a">Quitar el examen.</p><p data-option="b">Considerar una pausa breve de regulación y redirigir con una instrucción concreta.</p><p data-option="c">Exponer al estudiante.</p></li><li data-correct="b"><span>¿Qué no debe hacerse?</span><p data-option="a">Permitir agua según los acuerdos.</p><p data-option="b">Quitar el examen abruptamente o invalidar dudas.</p><p data-option="c">Dar instrucciones claras.</p></li><li data-correct="b"><span>¿Qué favorece el rendimiento?</span><p data-option="a">Música alta.</p><p data-option="b">Ambiente estructurado, pocas interrupciones y recordatorios claros.</p><p data-option="c">Observar fijamente desde atrás.</p></li></ol></article>
+<article class="guide-data" data-id="tdah-cambios" data-neurodivergencias="tdah" data-situaciones="cambios,transiciones,organizacion"><h2 data-field="title">Cambios inesperados</h2><div data-field="category">Organización y transiciones</div><div data-field="emoji">🔄</div><p data-field="description">Explica los cambios con anticipación y actualiza los acuerdos, prioridades y recordatorios.</p><div data-field="neuro">TDAH</div><div data-field="steps"><p>Comunica los cambios con anticipación, de forma clara y por escrito cuando sea posible.</p><p>Explica el nuevo plan y actualiza recordatorios y fechas.</p><p>Permite una ventana de transición y ayuda a priorizar tareas.</p><p>Confirma qué debe entregarse y cuándo.</p></div><div data-field="avoid"><p>Usar frases vagas o avisar en el último momento sin explicación.</p><p>Exigir una transición inmediata sin aclarar prioridades.</p><p>Cambiar acuerdos sin hacerlos visibles.</p></div><ol data-field="questions"><li data-correct="b"><span>¿Cómo comunicar un cambio inesperado?</span><p data-option="a">Con una frase vaga.</p><p data-option="b">Con anticipación, claridad, por escrito y con recordatorio.</p><p data-option="c">A última hora sin explicar.</p></li><li data-correct="b"><span>¿Qué frase conviene evitar?</span><p data-option="a">La junta cambia al martes a las 10:00 en el salón B.</p><p data-option="b">Al rato vemos dónde nos acomodamos.</p><p data-option="c">Te envío el nuevo plan.</p></li><li data-correct="b"><span>¿Cómo se debe comunicar un cambio?</span><p data-option="a">Con frases vagas.</p><p data-option="b">De forma clara, objetiva, anticipada y con apoyo visual si es posible.</p><p data-option="c">Avisando dos minutos antes sin explicar.</p></li><li data-correct="b"><span>¿Qué conviene dar después del cambio?</span><p data-option="a">Exigir rendimiento inmediato.</p><p data-option="b">Una ventana de transición y ayuda para priorizar.</p><p data-option="c">Una tarea extra sin explicación.</p></li><li data-correct="b"><span>¿Por qué puede ser difícil un cambio?</span><p data-option="a">Porque no quiere trabajar.</p><p data-option="b">Puede requerir reorganizar el plan y actualizar recordatorios.</p><p data-option="c">Porque es rebeldía.</p></li><li data-correct="b"><span>¿Qué ayuda a adaptarse?</span><p data-option="a">No explicar nada.</p><p data-option="b">Mostrar el nuevo plan y confirmar qué se entrega y cuándo.</p><p data-option="c">Improvisar.</p></li></ol></article>
+<article class="guide-data" data-id="tdah-participacion" data-neurodivergencias="tdah" data-situaciones="participacion,clase,impulsividad"><h2 data-field="title">Participación e impulsividad</h2><div data-field="category">Participación en clase</div><div data-field="emoji">🙋</div><p data-field="description">Establece reglas claras y ofrece vías respetuosas para participar y regular intervenciones impulsivas.</p><div data-field="neuro">TDAH</div><div data-field="steps"><p>Establece reglas de turnos claras y oportunidades de participación.</p><p>Redirige la atención de manera respetuosa y recuerda los acuerdos de forma discreta.</p><p>Permite aportar ideas por chat o notas, o usar turnos asignados.</p><p>Reconoce el esfuerzo por regularse y facilitar la reincorporación a la actividad.</p></div><div data-field="avoid"><p>Interpretar automáticamente una interrupción como falta de respeto.</p><p>Señalar o ridiculizar frente al grupo.</p><p>Excluir a la persona después de una intervención impulsiva.</p></div><ol data-field="questions"><li data-correct="b"><span>¿Una intervención impulsiva significa falta de respeto?</span><p data-option="a">Sí, siempre.</p><p data-option="b">No debe interpretarse automáticamente como falta de respeto.</p><p data-option="c">Se hace siempre para molestar.</p></li><li data-correct="b"><span>¿Cómo manejar la impulsividad en clase?</span><p data-option="a">Prohibir participar.</p><p data-option="b">Establecer reglas claras y dar oportunidades de participación.</p><p data-option="c">Ridiculizar.</p></li><li data-correct="b"><span>¿Cómo participar sin presión innecesaria?</span><p data-option="a">Solo oralmente y de inmediato.</p><p data-option="b">Ofrecer chat, notas o turnos claros.</p><p data-option="c">Hacer preguntas sorpresa frente al grupo.</p></li><li data-correct="b"><span>¿Qué hacer si interrumpe?</span><p data-option="a">Señalar frente al grupo.</p><p data-option="b">Redirigir con respeto y recordar la regla de forma privada.</p><p data-option="c">Ignorar y excluir.</p></li><li data-correct="b"><span>¿Qué debe evitarse?</span><p data-option="a">Dar turnos claros.</p><p data-option="b">Señalar o ridiculizar frente al grupo.</p><p data-option="c">Permitir aportes por escrito.</p></li><li data-correct="b"><span>¿Qué ayuda a la participación?</span><p data-option="a">No establecer reglas.</p><p data-option="b">Reglas claras y oportunidades organizadas de participación.</p><p data-option="c">Cambiar reglas a diario.</p></li></ol></article>
+<article class="guide-data" data-id="tdah-retroalimentacion" data-neurodivergencias="tdah" data-situaciones="retroalimentacion,organizacion,mejora"><h2 data-field="title">Retroalimentación y organización</h2><div data-field="category">Organización y mejora</div><div data-field="emoji">🗒️</div><p data-field="description">Combina comentarios concretos con prioridades, fechas claras y recordatorios para facilitar la aplicación de mejoras.</p><div data-field="neuro">TDAH</div><div data-field="steps"><p>Da retroalimentación en privado, clara, específica y por escrito cuando sea útil.</p><p>Indica qué mantener, qué ajustar y cuáles son los siguientes pasos.</p><p>Divide el trabajo en bloques y prioriza lo urgente e importante.</p><p>Confirma fechas, entregables y acuerdos; mantén recordatorios visibles.</p></div><div data-field="avoid"><p>Gritar frente al grupo o usar indirectas.</p><p>Usar frases ambiguas como «échale más ganas».</p><p>Cambiar acuerdos sin avisar ni dejar recordatorios.</p></div><ol data-field="questions"><li data-correct="b"><span>¿Cómo dar retroalimentación?</span><p data-option="a">Gritando frente al grupo.</p><p data-option="b">En privado, clara, específica y por escrito cuando sea útil.</p><p data-option="c">Con indirectas.</p></li><li data-correct="b"><span>¿Cómo organizar el tiempo?</span><p data-option="a">Todo al mismo tiempo sin orden.</p><p data-option="b">Dividir en bloques, priorizar y usar recordatorios.</p><p data-option="c">No recordar nunca.</p></li><li data-correct="b"><span>¿Qué significa priorizar?</span><p data-option="a">No ordenar las actividades.</p><p data-option="b">Ordenar qué es urgente e importante.</p><p data-option="c">Hacer primero lo menos importante.</p></li><li data-correct="b"><span>¿Qué conviene recordar?</span><p data-option="a">Nada.</p><p data-option="b">Entregas importantes y fechas claras.</p><p data-option="c">Solo verbalmente, sin detalles.</p></li><li data-correct="b"><span>¿Qué ayuda a aplicar la retroalimentación?</span><p data-option="a">Dar comentarios ambiguos y gritar.</p><p data-option="b">Indicar por escrito qué mantener y ajustar, y confirmar qué se entrega y cuándo.</p><p data-option="c">No dar retroalimentación.</p></li><li data-correct="b"><span>¿Qué condiciones previenen frustración y facilitan cumplir?</span><p data-option="a">Instrucciones ambiguas y cambios sin aviso.</p><p data-option="b">Fechas claras, recordatorios oportunos y acuerdos visibles y estables.</p><p data-option="c">Eliminar toda estructura.</p></li></ol></article>
+<article class="guide-data" data-id="tdah-correccion" data-neurodivergencias="tdah" data-situaciones="correccion,convivencia,respeto"><h2 data-field="title">Corrección y manejo respetuoso</h2><div data-field="category">Corrección y respeto</div><div data-field="emoji">🧭</div><p data-field="description">Corrige con respeto y claridad, sin atribuir intención negativa a una intervención impulsiva.</p><div data-field="neuro">TDAH</div><div data-field="steps"><p>Explica el error sin asumir que fue intencional.</p><p>Indica cómo hacerlo correctamente, paso a paso, y da tiempo para reincorporarse.</p><p>Ofrece vías alternativas para aportar, como anotar la idea o esperar un turno.</p><p>Reconoce el esfuerzo por regularse y mantener la participación.</p></div><div data-field="avoid"><p>Ridiculizar o señalar frente al grupo.</p><p>Quitar toda oportunidad de participar después de una interrupción.</p><p>Suponer automáticamente que una distracción demuestra desinterés.</p></div><ol data-field="questions"><li data-correct="b"><span>Ante una intervención impulsiva, ¿qué interpretación es más adecuada?</span><p data-option="a">Asumir que es una falta de respeto intencional.</p><p data-option="b">Entender que puede relacionarse con dificultad para inhibir impulsos y no asumir falta de respeto.</p><p data-option="c">Asumir que quiere molestar.</p></li><li data-correct="b"><span>¿Qué hacer después de explicar un error?</span><p data-option="a">Dejar a la persona sola.</p><p data-option="b">Mostrar cómo hacerlo correctamente paso a paso y dar tiempo de transición.</p><p data-option="c">Decirle que lo averigüe.</p></li><li data-correct="b"><span>¿Qué evitar al corregir?</span><p data-option="a">Dar un ejemplo.</p><p data-option="b">Señalar o ridiculizar frente al grupo.</p><p data-option="c">Dar oportunidad de volver a participar.</p></li><li data-correct="b"><span>¿Qué alternativa inclusiva puede ofrecerse?</span><p data-option="a">Quitarle la oportunidad de participar.</p><p data-option="b">Anotar la idea en chat o nota, o esperar su turno.</p><p data-option="c">Ignorar su aportación.</p></li><li data-correct="b"><span>¿Qué ayuda a mantener la motivación tras corregir una conducta?</span><p data-option="a">Centrarse solo en el error y excluir.</p><p data-option="b">Indicar cómo reincorporarse y reconocer el esfuerzo por regularse.</p><p data-option="c">Ignorar a la persona el resto de la clase.</p></li><li data-correct="b"><span>¿Qué debe evitar el entorno durante una corrección?</span><p data-option="a">Usar recordatorios visuales.</p><p data-option="b">Interrumpir innecesariamente, ridiculizar o asumir falta de interés.</p><p data-option="c">Establecer reglas claras y dividir tareas.</p></li></ol></article>
+</section>
