@@ -1,8 +1,13 @@
+using MentesConectadasAPI.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+builder.Services.AddSingleton<AccesoSql>();
 
 builder.Services.AddCors(options =>
 {
@@ -20,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Publica el frontend (HTML, CSS y JavaScript) desde wwwroot.
+
 app.UseDefaultFiles();
 app.UseStaticFiles();
 

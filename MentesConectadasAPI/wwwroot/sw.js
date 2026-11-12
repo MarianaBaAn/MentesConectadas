@@ -1,5 +1,63 @@
-const CACHE = 'mentes-conectadas-api-v3';
-const CORE = ['./', './index.html', './login.html', './registro.html', './inicio.html', './informacion.html', './sobre-nosotros.html', './neurodivergencias.html', './guias.html', './perfil.html', './css/styles.css', './js/config.js', './js/auth.js', './js/comun.js', './js/guias-lib.js', './js/login.js', './js/registro.js', './js/inicio.js', './js/informacion.js', './js/sobre-nosotros.js', './js/dashboard.js', './js/neurodivergencias.js', './js/guias.js', './js/perfil.js', './contenido.html', './contenido-data.js', './manifest.json', './assets/logo.png', './assets/icon-192.png', './assets/icon-512.png'];
+// Service Worker de Mentes Conectadas.
+// Estrategia: red primero y, si no hay conexión, respuesta desde la caché.
+const CACHE = 'mentes-conectadas-v23';
+const CORE = [
+  './',
+  './index.html',
+  './manifest.json',
+  './css/styles.css',
+  './js/admin.js',
+  './js/admin-extra.js',
+  './js/admin-db.js',
+  './js/charts.js',
+  './js/api.js',
+  './js/app.js',
+  './js/assistant.js',
+  './js/auth.js',
+  './js/config.js',
+  './js/donations.js',
+  './js/content.js',
+  './js/evaluations.js',
+  './js/favorites.js',
+  './js/guides.js',
+  './js/navigation.js',
+  './js/neuro.js',
+  './js/pages.js',
+  './js/profile.js',
+  './js/router.js',
+  './js/state.js',
+  './js/theme.js',
+  './js/ui.js',
+  './js/videos.js',
+    './js/catalogo.js',
+  './content/neurodivergencias.js',
+  './content/textos.js',
+  './assets/img/FondoLogin.jpg',
+  './assets/img/DISCALCULIAimg1.jpeg',
+  './assets/img/DISCALCULIAimg2.jpeg',
+  './assets/img/DISCALCULIAportada.jpeg',
+  './assets/img/autismo.jpg',
+  './assets/img/autismo2.jpg',
+  './assets/img/autismoPortada.jpg',
+  './assets/img/dislexia.png',
+  './assets/img/dislexia2.png',
+  './assets/img/dislexia3.jpg',
+  './assets/img/dislexiaPortada.jpg',
+  './assets/img/dispraxiaimg.jpg',
+  './assets/img/dispraxiaimg2.jpg',
+  './assets/img/icon-192.png',
+  './assets/img/icon-512.png',
+  './assets/img/logo.png',
+  './assets/img/neuro-autismo.svg',
+  './assets/img/neuro-discalculia.svg',
+  './assets/img/neuro-dislexia.svg',
+  './assets/img/neuro-dispraxia.svg',
+  './assets/img/neuro-tdah.svg',
+  './assets/img/portada_dispraxia.jpg',
+  './assets/img/tdahima1.jpg',
+  './assets/img/tdahimg2.jpg',
+  './assets/img/tdahportada.jpeg'
+];
 
 self.addEventListener('install', e => {
   self.skipWaiting();
@@ -15,9 +73,9 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-    //if (e.request.method !== 'GET' || !e.request.url.startsWith(self.location.origin)) return;
-    if (e.request.method !== 'GET' || !e.request.url.startsWith(self.location.origin)) return;
-    if (new URL(e.request.url).pathname.startsWith('/api/')) return; // la API nunca se cachea
+  if (e.request.method !== 'GET' || !e.request.url.startsWith(self.location.origin)) return;
+  if (/^\/(api|swagger)(\/|$)/i.test(new URL(e.request.url).pathname)) return;
+  if (e.request.headers.has('range') || e.request.destination === 'video' || /\.mp4($|\?)/.test(e.request.url)) return;
   e.respondWith(
     fetch(e.request, { cache: 'no-cache' })
       .then(r => {

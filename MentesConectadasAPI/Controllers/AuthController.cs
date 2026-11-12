@@ -1,12 +1,17 @@
+using System.Security.Cryptography;
+using System.Text;
 using Microsoft.AspNetCore.Mvc;
+using MentesConectadasAPI.Helpers;
 using MentesConectadasAPI.Models;
 
 namespace MentesConectadasAPI.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private static readonly TimeSpan DuracionToken = TimeSpan.FromHours(8);
         private readonly IConfiguration _configuration;
 
         public AuthController(IConfiguration configuration)
@@ -17,14 +22,16 @@ namespace MentesConectadasAPI.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
-            string correoConfigurado = _configuration["DemoLogin:Correo"] ?? string.Empty;
-            string passwordConfigurado = _configuration["DemoLogin:Password"] ?? string.Empty;
-            string nombreConfigurado = _configuration["DemoLogin:Nombre"] ?? "Usuario";
-            string tipoConfigurado = _configuration["DemoLogin:Tipo"] ?? "Estudiante";
+            string correoAdmin = _configuration["Admin:Correo"] ?? string.Empty;
+            string passwordAdmin = _configuration["Admin:Password"] ?? string.Empty;
+            string nombreAdmin = _configuration["Admin:Nombre"] ?? "Administrador";
+            string clave = _configuration["Admin:ClaveToken"] ?? string.Empty;
 
             bool credencialesCorrectas =
-                request.Correo.Equals(correoConfigurado, StringComparison.OrdinalIgnoreCase) &&
-                request.Password == passwordConfigurado;
+                correoAdmin.Length > 0 &&
+                clave.Length > 0 &&
+                (request.Correo ?? string.Empty).Trim().Equals(correoAdmin, StringComparison.OrdinalIgnoreCase) &&
+                CompararTextos(request.Password ?? string.Empty, passwordAdmin);
 
             if (!credencialesCorrectas)
             {
@@ -43,11 +50,16 @@ namespace MentesConectadasAPI.Controllers
                 respuesta = "Inicio de sesión correcto",
                 usuario = new
                 {
-                    nombre = nombreConfigurado,
-                    correo = correoConfigurado,
-                    tipo = tipoConfigurado
-                }
+                    nombre = nombreAdmin,
+                    correo = correoAdmin,
+                    tipo = "Administrador"
+                },
+                token = TokenAdmin.Crear(correoAdmin, clave, DuracionToken)
             });
         }
+
+        
+        private static bool CompararTextos(string a, string b) =>
+            CryptographicOperations.FixedTimeEquals(Encoding.UTF8.GetBytes(a), Encoding.UTF8.GetBytes(b));
     }
 }
