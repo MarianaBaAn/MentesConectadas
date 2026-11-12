@@ -6,17 +6,23 @@
 <meta name="theme-color" content="#172333">
 <meta name="description" content="Mentes Conectadas - información y orientación práctica sobre neurodivergencia en el entorno universitario.">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="assets/icon-192.png" type="image/png">
+<link rel="icon" href="assets/img/icon-192.png" type="image/png">
+<script>
+  
+  try { if (JSON.parse(localStorage.getItem('mc_theme')) === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+</script>
 <link rel="stylesheet" href="css/styles.css">
-<title>Inicio | Mentes Conectadas</title>
+<title>Mentes Conectadas</title>
 </head>
 <body>
 <div id="app"></div>
-<script src="contenido-data.js"></script>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script src="js/config.js"></script>
-<script src="js/auth.js"></script>
-<script src="js/comun.js"></script>
-<script src="js/dashboard.js"></script>
+<script>
+  
+  if (location.protocol === 'file:') {
+    document.getElementById('app').innerHTML = '<div style="max-width:560px;margin:15vh auto;padding:24px;font-family:sans-serif;color:#fff;line-height:1.6"><h1 style="font-size:24px">Abre la plataforma con un servidor local</h1><p>Mentes Conectadas usa módulos de JavaScript, que no funcionan al abrir <code>index.html</code> con doble clic. Usa «Open with Live Server» en Visual Studio Code o ejecuta <code>python -m http.server 8000</code> en esta carpeta y abre <code>http://localhost:8000</code>. Más detalles en el README.</p></div>';
+  }
+</script>
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
